@@ -1,15 +1,21 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+import donatur from "../modules/donatur";
+import clients from "../modules/clients";
+import transaksi from "../modules/transaksi";
+
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    isLoading: false,
   },
-  mutations: {
-  },
-  actions: {
-  },
+  mutations: {},
+  actions: {},
   modules: {
-  }
-})
+    donatur,
+    clients,
+    transaksi,
+  },
+});
